@@ -9,7 +9,7 @@ To load this extension into your Google Chrome browser:
 1.  Open Chrome and navigate to `chrome://extensions/`.
 2.  Enable "Developer mode" by toggling the switch in the top right corner.
 3.  Click the "Load unpacked" button in the top left corner.
-4.  Select the directory where you have cloned or downloaded this project (`/Users/mark/development/projects/tldr-tldw`).
+4.  Select the directory where you have cloned or downloaded this project.
 
 The extension should now appear in your list of installed extensions.
 
