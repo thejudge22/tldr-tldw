@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summary - Web & YouTube Summarizer</title>
+  <link rel="stylesheet" href="summary.css">
+</head>
+<body>
+  <div class="summary-page-container">
+    <div class="summary-content-wrapper">
+
+      <div id="loading" class="hidden">
+        <img src="../assets/loading.png" alt="Loading..." class="loading-spinner">
+        <div class="loading-text">Loading summary...</div>
+      </div>
+
+      <div id="error-container" class="hidden">
+        <p id="error-message" class="error"></p>
+      </div>
+
+      <div id="summary-container">
+        <!-- <div id="concise-title"></div> -->
+        <div id="summary-content"></div>
+        <div class="actions">
+          <button id="copy-btn">Copy Summary</button>
+          <button id="save-btn">Save Summary</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="summary.js"></script>
+</body>
+</html>

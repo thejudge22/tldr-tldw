@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0;
+  color: #1a73e8;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0d62c9;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#summarize-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#loading {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-text {
+  font-size: 16px;
+  color: #1a73e8;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#summary-container {
+  margin-top: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 15px; /* Increased padding */
+  border-radius: 8px; /* More rounded corners */
+  background-color: #f9f9f9; /* Light background */
+  line-height: 1.6; /* Improved readability */
+  color: #333; /* Darker text color */
+}
+
+#summary-content {
+  font-size: 15px; /* Slightly larger font */
+  line-height: 1.6; /* Ensure line height is consistent */
+  white-space: pre-wrap; /* Preserve line breaks and spaces */
+  word-wrap: break-word; /* Break long words */
+}
+
+.actions {
+  margin-top: 15px; /* Increased margin */
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Add space between buttons */
+}
+
+.error {
+  color: #d93025;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px; /* Added margin */
+}
+
+.loading-spinner {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
+
+/* Optional: Specific styling for YouTube summaries */
+.youtube-summary {
+  border-left: 4px solid #ff0000; /* Red border for YouTube */
+  padding-left: 10px;
+}

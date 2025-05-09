@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summarizer Extension Settings</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    body { width: 300px; padding: 10px; font-family: sans-serif; }
+    h1 { font-size: 1.2em; margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input[type="text"], input[type="password"] {
+      width: calc(100% - 22px);
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .help-text {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: -8px;
+      margin-bottom: 15px;
+    }
+    button {
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #message {
+      margin-top: 15px;
+      color: green;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Settings</h1>
+
+  <form id="settingsForm">
+    <div>
+      <label for="endpointUrl">OpenAI Compatible Endpoint URL:</label>
+      <input type="text" id="endpointUrl" value="https://api.openai.com/v1/chat/completions">
+      <div class="help-text">Enter the API endpoint URL for your summarization service.</div>
+    </div>
+
+    <div>
+      <label for="modelName">Model Name:</label>
+      <input type="text" id="modelName" value="gpt-4.1-nano">
+      <div class="help-text">Enter the name of the model to use for summarization.</div>
+    </div>
+
+    <div>
+      <label for="apiKey">API Key:</label>
+      <input type="password" id="apiKey">
+      <div class="help-text">Enter your API key. This is stored securely.</div>
+    </div>
+
+    <button type="submit">Save Settings</button>
+    <button type="button" id="exportSettings">Export Settings</button>
+    <button type="button" id="importSettings">Import Settings</button>
+    <input type="file" id="importFile" accept=".json" style="display: none;">
+  </form>
+
+  <div id="message"></div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

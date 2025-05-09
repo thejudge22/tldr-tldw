@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web & YouTube Summarizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Web & YouTube Summarizer</h1>
+    
+    <div id="loading" class="hidden">
+      <img src="../assets/loading.png" alt="Loading..." class="loading-spinner">
+      <div class="loading-text">Generating summary...</div>
+    </div>
+    
+    <div id="error-container" class="hidden">
+      <p id="error-message" class="error"></p>
+    </div>
+    
+    <div id="content-container">
+      <button id="summarize-btn">Summarize This Page</button>
+      
+      <div id="summary-container" class="hidden">
+        <div id="summary-content"></div>
+        <div class="actions">
+          <button id="copy-btn">Copy Summary</button>
+          <button id="save-btn">Save Summary</button>
+        </div>
+      </div>
+    </div>
+  
+    <button id="settings-button">Settings</button>
+    <script src="popup.js"></script>
+</body>
+</html>
